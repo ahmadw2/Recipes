@@ -13,7 +13,7 @@ Welcome to the **Ahmad Family Recipes** repository! This project is a collection
 ---
 
 ## Preview
-You can view the live site on GitHub Pages [here](https://<username>.github.io/Recipes).
+You can view the live site on GitHub Pages [here](https://ahmadw2.github.io/Recipes/).
 
 ## Features
 - **Family Recipes**: Collection of main dishes, sides, desserts, and drinks.
