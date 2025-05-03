@@ -1,0 +1,204 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Patrick Hand', cursive;
+  background-color: white;
+  text-align: center;
+}
+
+.header {
+  background-color: #bcd5db;
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.header {
+  background-color: #bcd5db;
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav {
+  display: flex;
+  gap: 20px;
+}
+
+.nav a {
+  font-family: 'Patrick Hand', cursive;
+  font-size: 18px;
+  text-decoration: none;
+  background-color: #ffffff;
+  color: #2c3e50;
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: 2px solid #a5c8d3;
+  transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.nav a:hover {
+  background-color: #e1eff2;
+  transform: scale(1.05);
+}
+
+
+.header div {
+  width: 30px;
+  height: 30px;
+  background-color: #dedede;
+}
+
+h1 {
+  margin-top: 40px;
+  font-size: 48px;
+  color: #2c3e50;
+}
+
+/* Flex container for recipe cards */
+.recipe-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Default card style (homepage cards) */
+.recipe-card {
+  width: 30%;
+  max-width: 300px;
+  min-width: 250px;
+  border: 2px solid #a5c8d3;
+  border-radius: 15px;
+  padding: 10px;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+.recipe-card:hover {
+  transform: scale(1.03);
+}
+
+.recipe-card img {
+  width: 100%;
+  height: 75%;
+  border-radius: 10px;
+}
+
+a.recipe-card {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.recipe-card p {
+  font-size: 24px;
+  margin-top: 10px;
+  color: #2c3e50;
+}
+
+/* Smaller card variant (for category pages) */
+.smaller-cards .recipe-card {
+  width: 15%;
+  max-width: 180px;
+}
+
+.smaller-cards .recipe-card p {
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
+
+/* Responsive styles */
+@media (max-width: 1200px) {
+  .smaller-cards .recipe-card {
+    width: 20%;
+  }
+
+  .recipe-card {
+    width: 45%;
+  }
+}
+
+@media (max-width: 768px) {
+  .smaller-cards .recipe-card {
+    width: 30%;
+  }
+
+  .recipe-card {
+    width: 90%;
+  }
+
+  h1 {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 480px) {
+  .smaller-cards .recipe-card {
+    width: 90%;
+  }
+}
+
+.recipe-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding: 40px;
+  justify-content: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: left;
+  flex-direction: row-reverse;
+}
+
+.instructions {
+  flex: 2 1 500px;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border: 2px solid #a5c8d3;
+  border-radius: 15px;
+}
+
+.ingredients {
+  flex: 1 1 300px;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border: 2px solid #a5c8d3;
+  border-radius: 15px;
+}
+
+.ingredients h2, .instructions h2 {
+  font-size: 28px;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.ingredients ul, .instructions ol {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #2c3e50;
+  padding-left: 20px;
+}
+
+html {
+  font-display: block;
+}
+
+@font-face {
+  font-family: 'Patrick Hand';
+  src: url('fonts/PatrickHand-Regular.woff2') format('woff2'),
+       url('fonts/PatrickHand-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  font-family: 'Patrick Hand', cursive;
+}
