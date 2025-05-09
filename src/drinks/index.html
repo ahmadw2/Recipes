@@ -5,41 +5,40 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Main Dishes</title>
   <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style-flexbox.css" />
+  <link rel="stylesheet" href="../../style-flexbox.css" />
 </head>
 <body>
-  <header class="header">
-    <nav class="nav">
-      <a href="index.html">Home</a>
-      <a href="breakfast.html">Breakfast</a>
-      <a href="main.html">Main Dishes</a>
-      <a href="sides.html">Sides</a>
-      <a href="dessert.html">Desserts</a>
-      <a href="drinks.html">Drinks</a>
-    </nav>
-  </header>
+  <div id="header-placeholder"></div>
+  <script>
+    fetch('/Recipes/src/header.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('header-placeholder').innerHTML = data;
+      })
+      .catch(error => console.error('Error loading header:', error));
+  </script>
 
   <h1>Drinks</h1>
 
   <div class="recipe-grid smaller-cards">
     
     <div class="recipe-card">
-      <img src="./Images/badaam sharbat.jpeg" alt="Recipe 1" />
+      <img src="./images/badaam sharbat.jpeg" alt="Recipe 1" />
       <p>Badam Ka Sharbat</p>
     </div>
     
     <div class="recipe-card">
-      <img src="./Images/italiansoda.jpg" alt="Recipe 2" />
+      <img src="./images/italiansoda.jpg" alt="Recipe 2" />
       <p>Hazelnut Italian Sodas</p>
     </div>
     
     <div class="recipe-card">
-      <img src="./Images/lassi.jpg" alt="Recipe 3" />
+      <img src="./images/lassi.jpg" alt="Recipe 3" />
       <p>Lassi</p>
     </div>
     
     <div class="recipe-card">
-      <img src="./Images/lemonade.jpg" alt="Recipe 4" />
+      <img src="./images/lemonade.jpg" alt="Recipe 4" />
       <p>Lemonade</p>
     </div>
 

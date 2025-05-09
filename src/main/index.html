@@ -13,220 +13,219 @@
     <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
   
     <!-- Your CSS file -->
-    <link rel="stylesheet" href="style-flexbox.css" />
+    <link rel="stylesheet" href="../../style-flexbox.css" />
   </head>
 <body>
-  <header class="header">
-    <nav class="nav">
-      <a href="index.html">Home</a>
-      <a href="breakfast.html">Breakfast</a>
-      <a href="main.html">Main Dishes</a>
-      <a href="sides.html">Sides</a>
-      <a href="dessert.html">Desserts</a>
-      <a href="drinks.html">Drinks</a>
-    </nav>
-  </header>
+  <div id="header-placeholder"></div>
+  <script>
+    fetch('/Recipes/src/header.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('header-placeholder').innerHTML = data;
+      })
+      .catch(error => console.error('Error loading header:', error));
+  </script>
   <h1>Main Dishes</h1>
 
   <div class="recipe-grid smaller-cards">
     
     <a href="biryani.html" class="recipe-card">
-      <img src="./Images/biryaniaesthetic.jpg" alt="Recipe 1" />
+      <img src="./images/biryaniaesthetic.jpg" alt="Recipe 1" />
       <p>Biryani</p>
     </a>
     
     <div class="recipe-card">
-      <img src="./Images/masala.jpg" alt="Recipe 1" />
+      <img src="./images/masala.jpg" alt="Recipe 1" />
       <p>Abu's Masala with Steak or Lamb</p>
     </div>
 
     <a href="daal.html" class="recipe-card">
-      <img src="./Images/dal.jpg" alt="Daal" />
+      <img src="./images/daal.jpg" alt="Daal" />
       <p>Daal</p>
     </a>
     
 
-    <a href="Aaloogosht.html" class="recipe-card">
-      <img src="./Images/Aaloogosht.png" alt="Recipe 3" />
-      <p>Aloogosht</p>
+    <a href="aloo_gosht.html" class="recipe-card">
+      <img src="./images/aloo_gosht.jpg" alt="Recipe 3" />
+      <p>Aloo gosht</p>
     </a>
     
 
     <a href="karai.html" class="recipe-card">
-      <img src="./Images/karai.jpg" alt="Karai" />
+      <img src="./images/karai.jpg" alt="Karai" />
       <p>Karai</p>
     </a>
     
 
     <a href="saag.html" class="recipe-card">
-      <img src="./Images/x_saag.JPG" alt="Saag" />
+      <img src="images/saag.jpg" alt="Saag" />
       <p>Saag</p>
     </a>
     
 
     <a href="seekh_kabob.html" class="recipe-card">
-      <img src="./Images/x_kebob.JPG" alt="Seekh Kebob" />
+      <img src="images/kebob.jpg" alt="Seekh Kebob" />
       <p>Seekh Kebob</p>
     </a>
     
 
     <a href="bhindi.html" class="recipe-card">
-      <img src="./Images/bhindi.jpg" alt="Bhindi" />
+      <img src="./images/bhindi.jpg" alt="Bhindi" />
       <p>Bhindi</p>
     </a>
     
 
     <a href="butter_chicken.html" class="recipe-card">
-      <img src="./Images/butterchicken.png" alt="Butter Chicken" />
+      <img src="./images/butterchicken.png" alt="Butter Chicken" />
       <p>Butter Chicken</p>
     </a>
     
 
     <a href="chicken_roast.html" class="recipe-card">
-      <img src="./Images/chickenroast.jpg" alt="Chicken Roast" />
+      <img src="./images/chickenroast.jpg" alt="Chicken Roast" />
       <p>Chicken Roast</p>
     </a>
     
 
     <a href="gobhi_gosht.html" class="recipe-card">
-      <img src="./Images/Gobhigosht.png" alt="Gobhi Gosht" />
+      <img src="./images/Gobhigosht.png" alt="Gobhi Gosht" />
       <p>Gobhi Gosht</p>
     </a>
     
 
     <a href="kaalay_channay.html" class="recipe-card">
-      <img src="./Images/KaalayChanney.png" alt="Kaalay Channay" />
+      <img src="./images/KaalayChanney.png" alt="Kaalay Channay" />
       <p>Kaalay Channay</p>
     </a>    
     
 
     <a href="palau.html" class="recipe-card">
-      <img src="./Images/pulao.jpg" alt="Pulao" />
-      <p>Pulao</p>
+      <img src="./images/palao.jpg" alt="Palao" />
+      <p>Palao</p>
     </a>
 
     <div class="recipe-card">
-      <img src="./Images/Bibimbap.jpg" alt="Recipe 12" />
+      <img src="./images/Bibimbap.jpg" alt="Recipe 12" />
       <p>Bibimbap</p>
     </div>
     
     <div class="recipe-card">
-      <img src="./Images/borscht.jpg" alt="Recipe 12" />
+      <img src="./images/borscht.jpg" alt="Recipe 12" />
       <p>Borscht</p>
     </div>
     
     <div class="recipe-card">
-      <img src="./Images/bulgogi.jpg" alt="Recipe 12" />
+      <img src="./images/bulgogi.jpg" alt="Recipe 12" />
       <p>Bulgogi</p>
     </div>
     
     <div class="recipe-card">
-      <img src="./Images/channey.png" alt="Recipe 12" />
+      <img src="./images/channey.png" alt="Recipe 12" />
       <p>Channay</p>
     </div>
     
     <div class="recipe-card">
-      <img src="./Images/chickenenchiladas.jpg" alt="Recipe 12" />
+      <img src="./images/chickenenchiladas.jpg" alt="Recipe 12" />
       <p>Chicken Enchiladas</p>
     </div>
     
     <div class="recipe-card">
-      <img src="./Images/chickengyros.jpg" alt="Recipe 12" />
+      <img src="./images/chickengyros.jpg" alt="Recipe 12" />
       <p>Chicken Gyros</p>
     </div>
     
     <div class="recipe-card">
-      <img src="./Images/chilli beef .jpg" alt="Recipe 12" />
+      <img src="./images/chilli beef .jpg" alt="Recipe 12" />
       <p>Chili Beef</p>
     </div>
     
     <div class="recipe-card">
-      <img src="./Images/chineserice.jpg" alt="Recipe 12" />
+      <img src="./images/chineserice.jpg" alt="Recipe 12" />
       <p>Chinese Rice</p>
     </div>
     
     <div class="recipe-card">
-      <img src="./Images/daal masoor.jpg" alt="Recipe 12" />
+      <img src="./images/daal masoor.jpg" alt="Recipe 12" />
       <p>Daal Masoor</p>
     </div>
     
     <div class="recipe-card">
-      <img src="./Images/Haleem.png" alt="Recipe 12" />
+      <img src="./images/Haleem.png" alt="Recipe 12" />
       <p>Haleem</p>
     </div>
     
     <div class="recipe-card">
-      <img src="./Images/kalbi.jpg" alt="Recipe 12" />
+      <img src="./images/kalbi.jpg" alt="Recipe 12" />
       <p>Kalbi</p>
     </div>
     
     <div class="recipe-card">
-      <img src="./Images/kadhi.jpeg" alt="Recipe 12" />
+      <img src="./images/kadhi.jpeg" alt="Recipe 12" />
       <p>Kari</p>
     </div>
     
     <div class="recipe-card">
-      <img src="./Images/aalookeema.jpeg" alt="Recipe 12" />
+      <img src="./images/aalookeema.jpeg" alt="Recipe 12" />
       <p>Keema</p>
     </div>
     
     <div class="recipe-card">
-      <img src="./Images/khichri.jpg" alt="Recipe 12" />
+      <img src="./images/khichri.jpg" alt="Recipe 12" />
       <p>Kichri</p>
     </div>
     
     <div class="recipe-card">
-      <img src="./Images/maashkidaal.jpg" alt="Recipe 12" />
+      <img src="./images/maashkidaal.jpg" alt="Recipe 12" />
       <p>Maash Ki Daal</p>
     </div>
     
     <div class="recipe-card">
-      <img src="./Images/salmon.jpg" alt="Recipe 12" />
+      <img src="./images/salmon.jpg" alt="Recipe 12" />
       <p>Salmon</p>
     </div>
       
     <div class="recipe-card">
-      <img src="./Images/shamikebab.jpg" alt="Recipe 12" />
+      <img src="./images/shamikebab.jpg" alt="Recipe 12" />
       <p>Shami Kabobs</p>
     </div>
         
     <div class="recipe-card">
-      <img src="./Images/causa.jpg" alt="Recipe 1" />
+      <img src="./images/causa.jpg" alt="Recipe 1" />
       <p>Causa</p>
     </div>
     
     <div class="recipe-card">
-      <img src="./Images/butternutsquashsoup.png" alt="Recipe 2" />
+      <img src="./images/butternutsquashsoup.png" alt="Recipe 2" />
       <p>Butternut Squash Soup</p>
     </div>
 
     <div class="recipe-card">
-      <img src="./Images/chickencornsoup .jpg" alt="Recipe 3" />
+      <img src="./images/chickencornsoup .jpg" alt="Recipe 3" />
       <p>Chicken Corn Soup</p>
     </div>
     
     <div class="recipe-card">
-      <img src="./Images/garlicchilliwings.jpg" alt="Recipe 4" />
+      <img src="./images/garlicchilliwings.jpg" alt="Recipe 4" />
       <p>Garlic Chilli Wings</p>
     </div>
     
     <a href="pakoras.html" class="recipe-card">
-      <img src="./Images/Pakoras.png" alt="Pakoras" />
+      <img src="./images/Pakoras.png" alt="Pakoras" />
       <p>Pakoras</p>
     </a>
     
     <div class="recipe-card">
-      <img src="./Images/potatosoup.jpg" alt="Recipe 6" />
+      <img src="./images/potatosoup.jpg" alt="Recipe 6" />
       <p>Potato Soup</p>
     </div>
     
     <a href="spanish_chicken_potatoes.html" class="recipe-card">
-      <img src="./Images/spanishchickenpotatoes.png" alt="Spanish Chicken Potatoes" />
+      <img src="./images/spanishchickenpotatoes.png" alt="Spanish Chicken Potatoes" />
       <p>Spanish Chicken Potatoes</p>
     </a>
     
     <div class="recipe-card">
-      <img src="./Images/vegetable rolls.jpg" alt="Recipe 8" />
+      <img src="./images/vegetable rolls.jpg" alt="Recipe 8" />
       <p>Vegetable Rolls</p>
     </div>
     

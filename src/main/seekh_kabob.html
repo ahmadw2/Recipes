@@ -5,19 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Seekh Kabob Recipe</title>
   <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style-flexbox.css" />
+  <link rel="stylesheet" href="../../style-flexbox.css" />
 </head>
 <body>
-  <header class="header">
-    <nav class="nav">
-      <a href="index.html">Home</a>
-      <a href="breakfast.html">Breakfast</a>
-      <a href="main.html">Main Dishes</a>
-      <a href="sides.html">Sides</a>
-      <a href="dessert.html">Desserts</a>
-      <a href="drinks.html">Drinks</a>
-    </nav>
-  </header>
+  <div id="header-placeholder"></div>
+  <script>
+    fetch('/Recipes/src/header.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('header-placeholder').innerHTML = data;
+      })
+      .catch(error => console.error('Error loading header:', error));
+  </script>
   <h1>Seekh Kabob</h1>
   <div class="recipe-content reverse-layout">
     <section class="instructions">
