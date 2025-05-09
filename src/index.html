@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ahmad Family Recipes</title>
+    <link rel="stylesheet" href="../style-flexbox.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <div id="header-placeholder"></div>
+    <script>
+      fetch('/Recipes/src/header.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('header-placeholder').innerHTML = data;
+        })
+        .catch(error => console.error('Error loading header:', error));
+    </script>
+
+    <!-- Main Title -->
+    <h1>Ahmad Family Recipes</h1>
+
+    <!-- Recipe Grid -->
+    <div class="recipe-grid">
+      <a href="breakfast/index.html" class="recipe-card">
+        <img src="./images/BreakfastRecipes.jpeg" alt="Breakfast Recipes" />
+        <p>Breakfast Recipes</p>
+      </a>
+      <a href="main/index.html" class="recipe-card">
+        <img src="./images/MainDish.png" alt="Main Dishes" />
+        <p>Main Dishes</p>
+      </a>
+      <a href="sides/index.html" class="recipe-card">
+        <img src="./images/Pakoras.png" alt="Side Dishes" />
+        <p>Sides</p>
+      </a>
+      <a href="desserts/index.html" class="recipe-card">
+        <img src="./images/Kheer.png" alt="Desserts" />
+        <p>Desserts</p>
+      </a>
+      <a href="drinks/index.html" class="recipe-card">
+        <img src="./images/Mocktails.jpg" alt="Drinks" />
+        <p>Drinks</p>
+      </a>
+      <a href="../wajeeha.html" class="recipe-card">
+        <img src="./images/Snack.png" alt="Snacks" />
+        <p>Snack</p>
+      </a>
+    </div>
+  </body>
+</html>
