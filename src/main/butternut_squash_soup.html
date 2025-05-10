@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Butternut Squash Soup Recipe</title>
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../style-flexbox.css" />
+</head>
+<body>
+<div id="header-placeholder"></div>
+<script>
+    fetch('/Recipes/src/header.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('header-placeholder').innerHTML = data;
+      })
+      .catch(error => console.error('Error loading header:', error));
+</script>
+<h1>Butternut Squash Soup</h1>
+<div class="recipe-content reverse-layout">
+    <section class="instructions">
+        <h2>Instructions</h2>
+        <ol>
+            <li>Saute onions in butter</li>
+            <li>Add broth and squash</li>
+            <li>Pressure cooker 15-20 minutes</li>
+            <li>Blend in blender with cream cheese</li>
+            <li>Season with salt and black pepper</li>
+        </ol>
+    </section>
+    <section class="ingredients">
+        <h2>Ingredients</h2>
+        <ul>
+            <li>1 onion, small or medium chopped</li>
+            <li>2-3 tbsp butter</li>
+            <li>32 oz or 4 cups butternut squash chopped</li>
+            <li>3 cups vegetable broth</li>
+            <li>ground black pepper to taste</li>
+            <li>sprinkle paprika </li>
+            <li>2 tbsp cream cheese</li>
+        </ul>
+    </section>
+</div>
+</body>
+</html>

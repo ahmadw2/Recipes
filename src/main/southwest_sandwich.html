@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Southwest Sandwich Recipe</title>
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../style-flexbox.css" />
+</head>
+<body>
+<div id="header-placeholder"></div>
+<script>
+    fetch('/Recipes/src/header.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('header-placeholder').innerHTML = data;
+      })
+      .catch(error => console.error('Error loading header:', error));
+</script>
+<h1>Southwest Sandwich</h1>
+<div class="recipe-content reverse-layout">
+    <section class="instructions">
+        <h2>Instructions</h2>
+        <ol>
+            <li>Blend southwest sauce ingredients in chopper. </li>
+            <li>Marinate chicken with garlic, ground cumin, ground chili powder, limes, lime juice, oil and cilantro. </li>
+            <li>In pan, sear chicken on each side for three minutes. </li>
+            <li>Assemble sandwiches with toasted ciabatta bread, chicken, southwest sauce, cheese, avocado and tomato.</li>
+        </ol>
+    </section>
+    <section class="ingredients">
+        <h2>Ingredients</h2>
+        <p>Southwest Sauce</p>
+        <ul>
+            <li>1/4 cup cilantro </li>
+            <li>1/2 tomato</li>
+            <li>1/4 onion</li>
+            <li>1 clove garlic</li>
+            <li>1/2 Tbsp ground cumin</li>
+            <li>1/2 Tbsp kosher salt</li>
+            <li>1/4 tsp cayenne pepper</li>
+            <li>1 cup mayonnaise </li>
+            <li>1 cup sour cream</li>
+        </ul>
+        <p>Chicken Marination</p>
+        <ul>
+            <li>1 1/2 lb chicken</li>
+            <li>1 Tbsp garlic</li>
+            <li>1 Tbsp ground cumin</li>
+            <li>1 Tbsp ground chili powder</li>
+            <li>2 limes zest and juice</li>
+            <li>1 cup virgin oil</li>
+            <li>1/4 cup cilantro</li>
+        </ul>
+        <p>Toppings</p>
+        <ul>
+            <li>Ciabatta</li>
+            <li>Choice of sliced cheese</li>
+            <li>Avocado </li>
+            <li>Tomato</li>
+        </ul>
+    </section>
+</div>
+</body>
+</html>
