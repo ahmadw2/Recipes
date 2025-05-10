@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cheese Corn Recipe</title>
+  <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../style-flexbox.css" />
+</head>
+<body>
+<div id="header-placeholder"></div>
+<script>
+  fetch('/Recipes/src/header.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('header-placeholder').innerHTML = data;
+    })
+    .catch(error => console.error('Error loading header:', error));
+</script>
+
+<h1>Cheese Corn</h1>
+<div class="recipe-content reverse-layout">
+  <section class="instructions">
+    <h2>Instructions</h2>
+    <ol>
+      <li>Preheat oven to 400F. </li>
+      <li>Combine all ingredients into a mixing bowl and stir together. </li>
+      <li>Pour mixture into a lightly greased baking dish. </li>
+      <li>Bake for 10 to 15 minutes or until mixture melts and bubbles. </li>
+      <li>Remove from oven and cool for about 10 minutes.</li>
+    </ol>
+  </section>
+  <section class="ingredients">
+    <h2>Ingredients</h2>
+    <ul>
+      <li>4 ears fresh sweet corn kernels</li>
+      <li>2/3 cup mayonnaise</li>
+      <li>8 ounces shredded mozzarella</li>
+      <li>1 tablespoon sugar</li>
+      <li>2 green onions, thinly sliced</li>
+      <li>salt and pepper to taste</li>
+    </ul>
+  </section>
+</div>
+</body>
+</html>

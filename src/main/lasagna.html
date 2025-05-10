@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lasagna Recipe</title>
+  <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../style-flexbox.css" />
+</head>
+<body>
+<div id="header-placeholder"></div>
+<script>
+  fetch('/Recipes/src/header.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('header-placeholder').innerHTML = data;
+    })
+    .catch(error => console.error('Error loading header:', error));
+</script>
+
+<h1>Lasagna</h1>
+<div class="recipe-content reverse-layout">
+  <section class="instructions">
+    <h2>Instructions</h2>
+    <ol>
+      <li>Wash the ground beef</li>
+      <li>Mix ground beef with a bit of water and oil to separate texture</li>
+      <li>Place ground beef in pressure cooker  on stove on medium to high heat </li>
+      <li>Add garlic, salt, red pepper, turmeric, and cumin seeds</li>
+      <li>Stir occasionally for five minutes </li>
+      <li>Cook in pressure cooker for 10 minutes </li>
+      <li>Mince onion and green bell pepper and mix in bowl</li>
+      <li>Release the pressure of the cooker and stir occasionally on medium heat until all water has evaporated from the ground beef</li>
+      <li>Add pasta sauce and stir for five minutes on medium heat</li>
+      <li>Boil lasagna in water and strain</li>
+      <li>Use a 11"x14" inch baking dish to layer lasagna with beef and mozzarella cheese in every layer. Make 4 layers and top with mozzarella. </li>
+      <li>Bake at 375 degrees for 45 minutes.</li>
+    </ol>
+  </section>
+  <section class="ingredients">
+    <h2>Ingredients</h2>
+    <ul>
+      <li>1 1/2 lb ground beef</li>
+      <li>1 lasagna box</li>
+      <li>1 jar of pasta sauce</li>
+      <li>16 to 24 oz cottage cheese</li>
+      <li>1 minced onion</li>
+      <li>10 cloves garlic</li>
+      <li>1 green bell pepper </li>
+      <li>1 tsp salt</li>
+      <li>2 tsp cumin seeds </li>
+      <li>1/2 tsp red pepper</li>
+      <li>1/4 tsp turmeric</li>
+    </ul>
+  </section>
+</div>
+</body>
+</html>

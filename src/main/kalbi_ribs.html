@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Kalbi Ribs Recipe</title>
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../style-flexbox.css" />
+</head>
+<body>
+<div id="header-placeholder"></div>
+<script>
+    fetch('/Recipes/src/header.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('header-placeholder').innerHTML = data;
+      })
+      .catch(error => console.error('Error loading header:', error));
+</script>
+
+<h1>Kalbi Ribs</h1>
+<div class="recipe-content reverse-layout">
+    <section class="instructions">
+        <h2>Instructions</h2>
+        <ol>
+            <li>Preparation: Sprinkle brown sugar over beef and mix well to evenly coat. Let sit at room temperature for 10 minutes while preparing marinade. In a bowl, whisk together remaining ingredients. Transfer beef into a large sealable freezer bag (you may need 2). Add marinade, press out excess air from bags, and seal. Turn bag over several times to ensure beef is evenly coated. Refrigerate for at least 4 hours but preferably overnight.</li>
+            <li>Heat gas or charcoal grill to medium-hot. Drain excess marinade off beef. Grill short ribs, turning once, to desired doneness, about 3 to 4 minutes per side. Garnish with thinly sliced green onions, if desired. Serve whole pieces as a main course or cut into smaller pieces, using kitchen shears, for a starter or party nibble.</li>
+        </ol>
+    </section>
+    <section class="ingredients">
+        <h2>Ingredients</h2>
+        <ul>
+            <li>10 pounds Korean style beef short ribs*</li>
+            <li>2 cup brown sugar, packed</li>
+            <li>2 cup soy sauce</li>
+            <li>1/2 cup mirin (rice wine)</li>
+            <li>2 small onion, peeled and finely grated</li>
+            <li>1 1/2 large Korean pear, peeled and finely grated</li>
+            <li>8 tablespoons minced garlic</li>
+            <li>4 tablespoons dark sesame oil</li>
+            <li>1/2 teaspoon black pepper</li>
+            <li>4 green onions, thinly sliced (optional)</li>
+        </ul>
+    </section>
+</div>
+</body>
+</html>
