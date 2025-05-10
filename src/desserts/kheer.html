@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Kheer Recipe</title>
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../style-flexbox.css" />
+</head>
+<body>
+<div id="header-placeholder"></div>
+<script>
+    fetch('/Recipes/src/header.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('header-placeholder').innerHTML = data;
+      })
+      .catch(error => console.error('Error loading header:', error));
+</script>
+
+<h1>Kheer</h1>
+<div class="recipe-content reverse-layout">
+    <section class="instructions">
+        <h2>Instructions</h2>
+        <ol>
+            <li>1 mug rice, soak 30 minutes</li>
+            <li>Boil rice in a little water ( 3 mugs) on full heat</li>
+            <li>Break up rice when tender</li>
+            <li>Add half and half and other milk</li>
+            <li>Cook, add sugar, taste</li>
+            <li>Add laichee powder</li>
+            <li>Add pistachios</li>
+            <li>Add rose water or few keura</li>
+        </ol>
+    </section>
+    <section class="ingredients">
+        <h2>Ingredients</h2>
+        <ul>
+            <li>Rice</li>
+            <li>Half and half</li>
+            <li>Milk</li>
+            <li>Sugar</li>
+            <li>Laichee powder</li>
+            <li>Pistachios</li>
+            <li>Rose water</li>
+        </ul>
+    </section>
+</div>
+</body>
+</html>

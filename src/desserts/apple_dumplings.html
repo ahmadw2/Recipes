@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sarah's Apple Dumplings Recipe</title>
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../style-flexbox.css" />
+</head>
+<body>
+<div id="header-placeholder"></div>
+<script>
+    fetch('/Recipes/src/header.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('header-placeholder').innerHTML = data;
+      })
+      .catch(error => console.error('Error loading header:', error));
+</script>
+
+<h1>Sarah's Apple Dumplings</h1>
+<div class="recipe-content reverse-layout">
+    <section class="instructions">
+        <h2>Instructions</h2>
+        <ol>
+            <li>Preheat the oven to 350 degrees. Grease a 9x13 inch baking dish.</li>
+            <li>Cut each apple into 8 wedges and set aside. Separate the crescent roll dough into triangles. Roll each apple wedge in crescent roll dough starting at the smallest end. Pinch to seal and place in the baking dish.</li>
+            <li>Melt butter in a small saucepan and stir in the sugar and cinnamon. Pour over the apple dumplings. Pour Sprite or Mountain Dew over the dumplings.</li>
+            <li>Bake for 35 to 45 minutes in the preheated oven, or until golden brown. </li>
+            <li>Serve with ice cream!</li>
+        </ol>
+    </section>
+    <section class="ingredients">
+        <h2>Ingredients</h2>
+        <ul>
+            <li>2 Apples, peeled and cored</li>
+            <li>3/4 cup white sugar</li>
+            <li>2 cans of crescent roll dough (10oz) </li>
+            <li>1/2 cup butter</li>
+            <li>1 tsp ground cinnamon</li>
+            <li>1 (12 fluid oz) Sprite/Mountain Dew bottle</li>
+            <li>Ice cream</li>
+        </ul>
+    </section>
+</div>
+</body>
+</html>

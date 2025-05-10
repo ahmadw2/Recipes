@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Creme Brulee Recipe</title>
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../style-flexbox.css" />
+</head>
+<body>
+<div id="header-placeholder"></div>
+<script>
+    fetch('/Recipes/src/header.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('header-placeholder').innerHTML = data;
+      })
+      .catch(error => console.error('Error loading header:', error));
+</script>
+
+<h1>Creme Brulee</h1>
+<div class="recipe-content reverse-layout">
+    <section class="instructions">
+        <h2>Instructions</h2>
+        <ol>
+            <li>Scrape vanilla bean and place seeds and bean in heavy cream. </li>
+            <li>Heat in saucepan while stirring, until not quite boiled, until film forms on top. </li>
+            <li>Remove from heat and let sit 15 minutes, covered. Strain. </li>
+            <li>Beat 2 egg yolks and 1/8 cup sugar (2 Tbsp). </li>
+            <li>Add some cream to the mixture and stir. Little by little add all the cream. </li>
+            <li>Pour cream mixture into ramekins and pop bubbles. </li>
+            <li>Place ramekins in a baking dish and pour hot water around creme brulee dish until its half way up the creme brulee dishes. </li>
+            <li>Bake at 325 degrees for 35-45 minutes until the creme brulee jiggles like jello. </li>
+            <li>Remove from oven and cool in water bath for 15 minutes. </li>
+            <li>Chill in refrigerator.</li>
+            <li>Top with white sugar evenly and then burn sugar with torch until golden. Serve soon.</li>
+        </ol>
+    </section>
+    <section class="ingredients">
+        <h2>Ingredients</h2>
+        <ul>
+            <li>1 cup heavy cream</li>
+            <li>1/2 vanilla bean</li>
+            <li>2 egg yolks</li>
+            <li>2 Tbsp white sugar</li>
+            <li>white sugar for sprinkling</li>
+        </ul>
+    </section>
+</div>
+</body>
+</html>

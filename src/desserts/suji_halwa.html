@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Suji Halwa Recipe</title>
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../style-flexbox.css" />
+</head>
+<body>
+<div id="header-placeholder"></div>
+<script>
+    fetch('/Recipes/src/header.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('header-placeholder').innerHTML = data;
+      })
+      .catch(error => console.error('Error loading header:', error));
+</script>
+
+<h1>Suji Halwa</h1>
+<div class="recipe-content reverse-layout">
+    <section class="instructions">
+        <h2>Instructions</h2>
+        <ol>
+            <li>Place suji, butter, cardamom on stove on low heat until light brown</li>
+            <li>In separate pot, boil 2 cups milk and 1 cup water</li>
+            <li>Carefully add milk and water in the suji </li>
+            <li>When mixture is dry, add sugar</li>
+            <li>Cook on medium to high heat until mixture is dry </li>
+            <li>Add almonds</li>
+            <li>Cook on low heat for 5 minutes </li>
+            <li>Suji can be cooked faster without butter in steel pan. </li>
+            <li>Add butter after suji is light brown.</li>
+        </ol>
+    </section>
+    <section class="ingredients">
+        <h2>Ingredients</h2>
+        <ul>
+            <li>1 cup semolina (Suji) </li>
+            <li>8 Tbsp butter</li>
+            <li>8 peeled and crushed green cardamom</li>
+            <li>2 cups milk</li>
+            <li>1 cup water</li>
+            <li>1 1/2 cup sugar</li>
+            <li>1 handful of crushed almonds</li>
+        </ul>
+    </section>
+</div>
+</body>
+</html>

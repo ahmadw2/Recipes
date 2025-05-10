@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sarah's Chocolate Chip Cookies Recipe</title>
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../style-flexbox.css" />
+</head>
+<body>
+<div id="header-placeholder"></div>
+<script>
+    fetch('/Recipes/src/header.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('header-placeholder').innerHTML = data;
+      })
+      .catch(error => console.error('Error loading header:', error));
+</script>
+
+<h1>Sarah's Chocolate Chip Cookies</h1>
+<div class="recipe-content reverse-layout">
+    <section class="instructions">
+        <h2>Instructions</h2>
+        <ol>
+            <li>Sift flours, baking soda, baking powder and salt into a bowl. Set aside.</li>
+            <li>Using a mixer fitted with paddle attachment, cream butter and sugars together until very light, about 5 minutes. </li>
+            <li>Add eggs, one at a time, mixing well after each addition. </li>
+            <li>Stir in the vanilla. </li>
+            <li>Reduce speed to low, add dry ingredients and mix until just combined, 5 to 10 seconds. </li>
+            <li>Drop chocolate pieces in and incorporate them without breaking them. </li>
+            <li>Press plastic wrap against dough and refrigerate for 24 to 36 hours. Dough may be used in batches, and can be refrigerated for up to 72 hours.</li>
+            <li>When ready to bake, preheat oven to 350 degrees. </li>
+            <li>Line a baking sheet with parchment paper or a nonstick baking mat. Set aside.</li>
+            <li>Scoop 6 3 1/2-ounce mounds of dough (the size of generous golf balls) onto baking sheet. </li>
+            <li>Sprinkle lightly with sea salt. </li>
+            <li>Bake until golden brown but still soft, 18 to 20 minutes. </li>
+            <li>Transfer sheet to a wire rack for 10 minutes, then slip cookies onto another rack to cool a bit more. </li>
+            <li>Eat warm, with a big napkin.</li>
+        </ol>
+    </section>
+    <section class="ingredients">
+        <h2>Ingredients</h2>
+        <ul>
+            <li>2 cups minus 2 tablespoons (8 1/2 ounces) cake flour</li>
+            <li>1 2/3 cups (8 1/2 ounces) bread flour</li>
+            <li>1 1/4 tsp baking soda</li>
+            <li>1 1/2 tsp baking powder</li>
+            <li>1 tsp coarse salt</li>
+            <li>2  sticks (1 1/4 cups) unsalted butter</li>
+            <li>1 1/4 cups (10 ounces) light brown sugar</li>
+            <li>1 cup plus 2 tablespoons (8 ounces) granulated sugar</li>
+            <li>2 large eggs</li>
+            <li>2 tsp natural vanilla extract</li>
+            <li>1 lb bittersweet chocolate disks or fèves, at least 60 percent cacao content</li>
+            <li> Sea salt.</li>
+        </ul>
+    </section>
+</div>
+</body>
+</html>

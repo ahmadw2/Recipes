@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Zarda Recipe</title>
+  <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../style-flexbox.css" />
+</head>
+<body>
+<div id="header-placeholder"></div>
+<script>
+  fetch('/Recipes/src/header.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('header-placeholder').innerHTML = data;
+    })
+    .catch(error => console.error('Error loading header:', error));
+</script>
+
+<h1>Zarda</h1>
+<div class="recipe-content reverse-layout">
+  <section class="instructions">
+    <h2>Instructions</h2>
+    <ol>
+      <li>Boil rice in open water. </li>
+      <li>Add zarda food coloring</li>
+      <li>Strain rice</li>
+      <li>Place butter, oil and green cardamom in pan. Cook and stir occasionally until fragrant</li>
+      <li>Add 1/2 cup water and sugar and stir to keep from crystalizing </li>
+      <li>When mixture starts to boil, add rice </li>
+      <li>Add almonds and optional garnishes such as orange peel</li>
+      <li>Cook until water evaporates</li>
+      <li>Cook for another 10 minutes on low heat</li>
+    </ol>
+  </section>
+  <section class="ingredients">
+    <h2>Ingredients</h2>
+    <ul>
+      <li>2 cup rice</li>
+      <li>2 cup sugar</li>
+      <li>8 Tbsp butter</li>
+      <li>1/4 cup oil</li>
+      <li>10 green cardamom</li>
+      <li>20 Sliced almonds </li>
+      <li>1/2 tsp Zarda food coloring </li>
+      <li>Optional: dried pineapple, dried fruit, orange peel, cashew</li>
+    </ul>
+  </section>
+</div>
+</body>
+</html>
