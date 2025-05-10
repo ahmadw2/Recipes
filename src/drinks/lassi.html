@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lassi Recipe</title>
+  <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../style-flexbox.css" />
+</head>
+<body>
+<div id="header-placeholder"></div>
+<script>
+  fetch('/Recipes/src/header.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('header-placeholder').innerHTML = data;
+    })
+    .catch(error => console.error('Error loading header:', error));
+</script>
+
+<h1>Lassi</h1>
+<div class="recipe-content reverse-layout">
+  <section class="instructions">
+    <h2>Instructions</h2>
+    <ol>
+      <li>Whisk/blend 1 cup yogurt </li>
+      <li>Add 3 cups water</li>
+      <li>Whisk/blend water and yogurt</li>
+      <li>Add 1/2 tsp salt</li>
+      <li>For meethi lassi replace salt with 4 tbsp sugar </li>
+      <li>Serve over ice</li>
+    </ol>
+  </section>
+  <section class="ingredients">
+    <h2>Ingredients</h2>
+    <ul>
+      <li>1 cup yogurt </li>
+      <li>3 cups water</li>
+      <li>1/2 tsp salt </li>
+      <li>4 tbsp sugar (optional)</li>
+      <li>Ice</li>
+    </ul>
+    <p>Serving size: 2</p>
+  </section>
+</div>
+</body>
+</html>

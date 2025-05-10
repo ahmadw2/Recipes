@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Badam Ka Sharbat Recipe</title>
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../style-flexbox.css" />
+</head>
+<body>
+<div id="header-placeholder"></div>
+<script>
+    fetch('/Recipes/src/header.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('header-placeholder').innerHTML = data;
+      })
+      .catch(error => console.error('Error loading header:', error));
+</script>
+
+<h1>Badam Ka Sharbat</h1>
+<div class="recipe-content reverse-layout">
+    <section class="instructions">
+        <h2>Instructions</h2>
+        <ol>
+            <li>Soak 1/2 cup almonds</li>
+            <li>Peel and grind them into fine paste</li>
+            <li>Soak 1 tbsp poppy and 1 tbsp melon seeds for 2 hours. Make a fine paste by grinding. </li>
+            <li>Make 1 sugar syrup by boiling 3 cups sugar and 2 cups water together. Add all pastes and 8 green cardamoms to sugar syrup and let boil on low heat for 10 minutes, stirring occasionally. </li>
+            <li>Let syrup cool and mix 1/4 cup sharbat with chilled water or milk!</li>
+        </ol>
+    </section>
+    <section class="ingredients">
+        <h2>Ingredients</h2>
+        <ul>
+            <li>1/2 cup almonds</li>
+            <li>1 tbsp poppy</li>
+            <li>1 tbsp melon seeds </li>
+            <li>3 cups sugar</li>
+            <li>2 cups water</li>
+            <li>8 green cardamoms</li>
+        </ul>
+    </section>
+</div>
+</body>
+</html>
