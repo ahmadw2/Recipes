@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Baklava Recipe</title>
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../style-flexbox.css" />
+</head>
+<body>
+<div id="header-placeholder"></div>
+<script>
+    fetch('/Recipes/src/header.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('header-placeholder').innerHTML = data;
+      })
+      .catch(error => console.error('Error loading header:', error));
+</script>
+
+<h1>Baklava</h1>
+<div class="recipe-content reverse-layout">
+    <section class="instructions">
+        <h2>Instructions</h2>
+        <ol>
+            <li>Make sure phyllo dough is fully thawed. </li>
+            <li>Mix nuts, sugar and cinnamon in a bowl. </li>
+            <li>Line a baking tray with parchment paper. </li>
+            <li>Melt one stick of butter until it is liquid. </li>
+            <li>Take phyllo dough sheets and place in pan. </li>
+            <li>Trim excess dough off the sides. </li>
+            <li>Fold one side of the sheets over to the other sandwich style. </li>
+            <li>Fold back one layer of the phyllo dough and brush with butter.  </li>
+            <li>After each five (or however many you decide), sprinkle evenly with nut mixture, make sure the sheet you sprinkle is also buttered. </li>
+            <li>Repeat layers until all done. </li>
+            <li>Sprinkle nuts on top of finished baklava. </li>
+            <li>Take pizza cutter and cut slices.</li>
+            <li>You can cut diamonds or squares, whichever is easier.</li>
+            <li>Bake at 400 degrees for 20-25 minutes. </li>
+            <li>Take it out when top is golden brown and before the nuts turn dark.</li>
+        </ol>
+        <p>Sauce:</p>
+        <ol>
+            <li>Mix  sugar, water, honey and lemon juice in a saucepan. </li>
+            <li>Heat on medium heat for about 15-20 minutes or until the mixture is syrupy. </li>
+            <li>Keep stirring or the sugar will burn. </li>
+            <li>When baklava is done, let it cool for a bit so its not hot, then pour sauce evenly over the baklava with a spoon. </li>
+            <li>Let the baklava cool before putting it in a dish, the syrup acts like glue as it cools and keeps the baklava intact. </li>
+            <li>You might need to cut the pieces with a knife to help separate them before removing them from the pan.</li>
+        </ol>
+    </section>
+    <section class="ingredients">
+        <h2>Ingredients</h2>
+        <ul>
+            <li>Phyllo dough</li>
+            <li>3 cups chopped nuts (mix of almonds, walnuts/pecans, peanuts, pistachios, hazelnuts) </li>
+            <li>3/4 cup sugar</li>
+            <li>3/4 tsp cinnamon</li>
+            <li>1/2 cup butter (can add more if needed) </li>
+        </ul>
+        <p>Sauce:</p>
+        <ul>
+            <li>1/2 cup sugar</li>
+            <li>3/4 cup honey</li>
+            <li>1 tsp lemon juice</li>
+            <li>3/4 cup water</li>
+        </ul>
+    </section>
+</div>
+</body>
+</html>

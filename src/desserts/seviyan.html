@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Seviyan Recipe</title>
+  <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../style-flexbox.css" />
+</head>
+<body>
+<div id="header-placeholder"></div>
+<script>
+  fetch('/Recipes/src/header.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('header-placeholder').innerHTML = data;
+    })
+    .catch(error => console.error('Error loading header:', error));
+</script>
+
+<h1>Seviyan</h1>
+<div class="recipe-content reverse-layout">
+  <section class="instructions">
+    <h2>Instructions</h2>
+    <ol>
+      <li>Cut seviyan in four pieces and place in pot on stove on medium heat with oil. </li>
+      <li>Stir until all seviyan are coated in oil. </li>
+      <li>Make sure seviyan do not burn, if needed, turn off stove while stirring. </li>
+      <li>Add milk and cook until desired thickness</li>
+      <li>Add sugar </li>
+      <li>Cook for 3 to 4 minutes</li>
+      <li>Add almonds and kewra essence </li>
+      <li>Add crushed pistachios for garnish</li>
+    </ol>
+  </section>
+  <section class="ingredients">
+    <h2>Ingredients</h2>
+    <ul>
+      <li>1 pack Seviyan</li>
+      <li>1/2 gallon milk</li>
+      <li>1 1/2 cup sugar</li>
+      <li>10 peeled and crushed green cardamom</li>
+      <li>1/2 tsp kewra essence </li>
+      <li>1/4 cup oil </li>
+      <li>5 pistachios</li>
+    </ul>
+  </section>
+</div>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Hot Lava Cake Recipe</title>
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../style-flexbox.css" />
+</head>
+<body>
+<div id="header-placeholder"></div>
+<script>
+    fetch('/Recipes/src/header.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('header-placeholder').innerHTML = data;
+      })
+      .catch(error => console.error('Error loading header:', error));
+</script>
+
+<h1>Hot Lava Cake</h1>
+
+<div class="recipe-content reverse-layout">
+    <section class="instructions">
+        <h2>Instructions</h2>
+        <ol>
+            <li>Preheat oven to 425 degrees</li>
+            <li>Butter 5 ramekins</li>
+            <li>Microwave chocolate and butter in large microwaveable bowl until butter is melted; whisk until chocolate is completely melted. </li>
+            <li>Stir in sugar. </li>
+            <li>Add whole eggs and egg yolks; mix well. </li>
+            <li>Stir in flour. </li>
+            <li>Spoon into prepared cups.</li>
+            <li>Bake 8 to 10 min or until sides of desserts are firm but centers are still soft. Let stand 1 min.</li>
+            <li>Carefully run small spatula around cakes to loosen; invert into dessert plates. Serve with vanilla ice cream.</li>
+        </ol>
+    </section>
+
+    <section class="ingredients">
+        <h2>Ingredients</h2>
+        <ul>
+            <li>1 pkg. (4oz) Ghirardelli semi sweet chocolate bar</li>
+            <li>1/2 cup butter</li>
+            <li>1 cup powdered sugar</li>
+            <li>2 whole eggs</li>
+            <li>2 egg yolks</li>
+            <li>6 tbsp flour</li>
+            <li>Optional: vanilla ice cream</li>
+        </ul>
+    </section>
+</div>
+</body>
+</html>

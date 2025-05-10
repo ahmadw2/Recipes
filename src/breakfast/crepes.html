@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Crepes Recipe</title>
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../style-flexbox.css" />
+</head>
+<body>
+<div id="header-placeholder"></div>
+<script>
+    fetch('/Recipes/src/header.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('header-placeholder').innerHTML = data;
+      })
+      .catch(error => console.error('Error loading header:', error));
+</script>
+
+<h1>Crepes</h1>
+<div class="recipe-content reverse-layout">
+    <section class="instructions">
+        <h2>Instructions</h2>
+        <ol>
+            <li>Combine dry ingredients. In a separate bowl, mix eggs, vanilla and butter. </li>
+            <li>Add milk to dry ingredients and mix. Add egg mixture. </li>
+            <li>Pour about 1/4 cup batter into medium hot, buttered pan. </li>
+            <li>Turn when barely brown. </li>
+            <li>Fill with jam, powdered sugar, vanilla ice cream, whip cream, strawberries or anything else you desire!</li>
+        </ol>
+    </section>
+    <section class="ingredients">
+        <h2>Ingredients</h2>
+        <ul>
+            <li>1 1/2 cup flour</li>
+            <li>2 cup milk</li>
+            <li>1 tbsp sugar</li>
+            <li>2 eggs</li>
+            <li>2 tbsp butter</li>
+            <li>1/2 tsp salt</li>
+            <li>1/2 tsp baking powder</li>
+            <li>1/2 tsp vanilla</li>
+        </ul>
+    </section>
+</div>
+</body>
+</html>
