@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Abu Masala Recipe</title>
+  <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../style-flexbox.css" />
+</head>
+<body>
+<div id="header-placeholder"></div>
+<script>
+  fetch('/Recipes/src/header.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('header-placeholder').innerHTML = data;
+    })
+    .catch(error => console.error('Error loading header:', error));
+</script>
+
+<h1>Abu Masala</h1>
+
+<div class="recipe-content reverse-layout">
+  <section class="instructions">
+    <h2>Instructions</h2>
+    <p>Mix ingredients in a bowl. Use to marinate meat.</p>
+  </section>
+
+  <section class="ingredients">
+    <h2>Ingredients</h2>
+    <ul>
+      <li>6 tsp cumin blended but still a little thick</li>
+      <li>2 tsp black pepper, thickly ground </li>
+      <li>2 tsp red pepper </li>
+      <li>2 tsp red pepper flakes</li>
+      <li>2 tsp salt</li>
+    </ul>
+  </section>
+</div>
+</body>
+</html>

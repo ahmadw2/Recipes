@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mashed Potatoes Recipe</title>
+  <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../style-flexbox.css" />
+</head>
+<body>
+<div id="header-placeholder"></div>
+<script>
+  fetch('/Recipes/src/header.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('header-placeholder').innerHTML = data;
+    })
+    .catch(error => console.error('Error loading header:', error));
+</script>
+<h1>Mashed Potatoes</h1>
+<div class="recipe-content reverse-layout">
+  <section class="instructions">
+    <h2>Instructions</h2>
+    <ol>
+      <li>Put the potatoes into a large pot, add the bay leaf, 2 tablespoons salt, and cover with cold water Bring to a boil over medium-high heat and cook until the potatoes are tender, about 20 minutes</li>
+      <li>Drain them well and remove the bay leaf</li>
+      <li>Meanwhile, heat the cream and butter in a small saucepan. </li>
+      <li>Put the potatoes through a ricer or food mill into a bowl. </li>
+      <li>Add the hot cream and season with salt and pepper. </li>
+      <li>Mix together with a spoon and add the chives.</li>
+    </ol>
+  </section>
+  <section class="ingredients">
+    <h2>Ingredients</h2>
+    <ul>
+      <li>4 lbs golden creamer potatoes, peeled and cut into quarters</li>
+      <li>1 bay leaf </li>
+      <li>Kosher Salt </li>
+      <li>Ground black pepper</li>
+      <li>2 cups heavy cream </li>
+      <li>3 Tbsp unsalted butter</li>
+      <li>2 Tbsp chopped chives</li>
+    </ul>
+  </section>
+</div>
+</body>
+</html>
