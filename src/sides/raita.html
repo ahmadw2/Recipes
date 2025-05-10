@@ -18,12 +18,14 @@
       .catch(error => console.error('Error loading header:', error));
   </script>
 
-  <!-- Page Title -->
   <h1>Raita</h1>
 
-  <!-- Recipe Layout -->
-  <div class="recipe-content">
-    <!-- Ingredients Section -->
+  <div class="recipe-content reverse-layout">
+    <section class="instructions">
+      <h2>Instructions</h2>
+      <p>Mix ingredients in a bowl. Place in serving dish after mixing.</p>
+    </section>
+
     <section class="ingredients">
       <h2>Ingredients</h2>
       <ul>
@@ -35,12 +37,6 @@
         <li>¼ tsp black pepper</li>
         <li>2 cups plain yogurt</li>
       </ul>
-    </section>
-
-    <!-- Instructions Section -->
-    <section class="instructions">
-      <h2>Instructions</h2>
-      <p>Mix ingredients in a bowl. Place in serving dish after mixing.</p>
     </section>
   </div>
 </body>
