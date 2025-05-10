@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Kichri Recipe</title>
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../style-flexbox.css" />
+</head>
+<body>
+<div id="header-placeholder"></div>
+<script>
+    fetch('/Recipes/src/header.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('header-placeholder').innerHTML = data;
+      })
+      .catch(error => console.error('Error loading header:', error));
+</script>
+
+<h1>Kichri</h1>
+<div class="recipe-content reverse-layout">
+    <section class="instructions">
+        <h2>Instructions</h2>
+        <ol>
+            <li>Soak moong daal for 1 hour and rinse</li>
+            <li>Soak rice for 1/2 hour</li>
+            <li>Slice onions in long slim pieces </li>
+            <li>Add onions and oil in pot and cook until brown</li>
+            <li>Add four cups water </li>
+            <li>When water starts to boil, add daal, salt, black peppercorns and cinnamon stick</li>
+            <li>Cook on medium heat for 10 minutes</li>
+            <li>Check to see if daal is softened </li>
+            <li>Add rice and cumin seeds </li>
+            <li>Cover and occasionally stir </li>
+            <li>When water evaporates, stir entire pot.Cook for another 10 minutes on low heat.</li>
+        </ol>
+    </section>
+    <section class="ingredients">
+        <h2>Ingredients</h2>
+        <ul>
+            <li>1/2 Daikon grated</li>
+            <li> 1/2 tsp salt</li>
+            <li>1/2 tsp red chili pepper</li>
+            <li>1/2 jalapeño (seedless) </li>
+            <li>1 tbsp cilantro chopped</li>
+        </ul>
+    </section>
+</div>
+</body>
+</html>

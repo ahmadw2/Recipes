@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Causa Recipe</title>
+  <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../style-flexbox.css" />
+</head>
+<body>
+<div id="header-placeholder"></div>
+<script>
+  fetch('/Recipes/src/header.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('header-placeholder').innerHTML = data;
+    })
+    .catch(error => console.error('Error loading header:', error));
+</script>
+
+<h1>Causa</h1>
+<div class="recipe-content reverse-layout">
+  <section class="instructions">
+    <h2>Instructions</h2>
+    <ol>
+      <li>First of all, boil the potatoes in salted water. Peel and mash while still hot (enough to handle). Let cool and mix thoroughly with the ají amarillo paste, vegetable oil, and lime juice. Salt to taste.</li>
+      <li>Mix the tuna with the chopped onions and mayonnaise.</li>
+      <li>Place a layer of the potato mash on a serving dish, and spread with a thin film of mayonnaise. Cut the avocado in slices and lay on the first layer of potato mash. Spread a second layer of potato mash, and cover with the tuna mayonnaise. Cover with a last layer of potatoes, and decorated with slices of hard boiled eggs and black olives.</li>
+    </ol>
+  </section>
+  <section class="ingredients">
+    <h2>Ingredients</h2>
+    <ul>
+      <li>1kg potatoes (yellow, if available)</li>
+      <li> 4 tbsp ají amarillo paste</li>
+      <li>1/2 cup vegetable oil (olive oil not recommended)</li>
+      <li>Juice 1 key lime</li>
+      <li>1 can of tuna-fish packed in oil</li>
+      <li>1/2 onion, finely chopped</li>
+      <li>1 cup mayonnaise</li>
+      <li>1 avocado</li>
+      <li>2 boiled eggs in half</li>
+      <li>Botija Olives (kalamata olives substitute) </li>
+      <li> Salt</li>
+    </ul>
+  </section>
+</div>
+</body>
+</html>

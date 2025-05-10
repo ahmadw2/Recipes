@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Haleem Recipe</title>
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../style-flexbox.css" />
+</head>
+<body>
+<div id="header-placeholder"></div>
+<script>
+    fetch('/Recipes/src/header.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('header-placeholder').innerHTML = data;
+      })
+      .catch(error => console.error('Error loading header:', error));
+</script>
+
+<h1>Haleem</h1>
+<div class="recipe-content reverse-layout">
+    <section class="instructions">
+        <h2>Instructions</h2>
+        <ol>
+            <li>Soak Daal for 4 hours or overnight</li>
+            <li>Rinse </li>
+            <li>Put daal in pressure cooker and fill half with water</li>
+            <li>Cook in pressure cooker for 10 minutes</li>
+            <li>In another pressure cooker, add 1/2 cup oil and steak. Stir for 10 minutes until steak is a light brown. </li>
+            <li>Add 4 cups water and cook in pressure cooker for 10 minutes.</li>
+            <li>In another pot, place beef bones and 6 cups water. Cook on medium heat for one hour. </li>
+            <li>Remove bones from water. </li>
+            <li>Place daal and steak in chopper.</li>
+            <li>Mix daal, steak and broth all in one pot. Add full packet of Shan masala. Cook and stir occasionally on low heat until done. Add more masala according to taste. </li>
+            <li>Cook 2 onions in 1/2 cup oil in pan until crispy golden brown. </li>
+            <li>Garnish with onions, chopped jalapeños, chopped cilanto, lime, and ginger.</li>
+        </ol>
+    </section>
+    <section class="ingredients">
+        <h2>Ingredients</h2>
+        <ul>
+            <li>Haleem Mix Packet (Daal)</li>
+            <li>Haleem Shan Masala </li>
+            <li>2 lbs boneless steak </li>
+            <li>1 lb Beef bones </li>
+            <li>1 cup oil</li>
+            <li>2 onions</li>
+            <li>2 inch ginger piece</li>
+            <li>2 Jalapeno</li>
+            <li>1 bunch Cilantro</li>
+            <li>2 limes</li>
+        </ul>
+    </section>
+</div>
+</body>
+</html>

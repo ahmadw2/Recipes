@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Chinese Rice Recipe</title>
+  <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../style-flexbox.css" />
+</head>
+<body>
+<div id="header-placeholder"></div>
+<script>
+  fetch('/Recipes/src/header.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('header-placeholder').innerHTML = data;
+    })
+    .catch(error => console.error('Error loading header:', error));
+</script>
+
+<h1>Chinese Rice</h1>
+<div class="recipe-content reverse-layout">
+  <section class="instructions">
+    <h2>Instructions</h2>
+    <ol>
+      <li>Make 1 cup of rice </li>
+      <li>Saute onion, green onion, and jalapeño in pan and add to rice</li>
+      <li>Add oil</li>
+      <li>Add soy sauce and pepper to taste</li>
+      <li>Whisk eggs in bowl </li>
+      <li>Cook eggs in pan, add salt and pepper</li>
+      <li>Add eggs to rice and stir</li>
+    </ol>
+  </section>
+  <section class="ingredients">
+    <h2>Ingredients</h2>
+    <ul>
+      <li>1 cup boiled rice</li>
+      <li>1/2 sautéed onion</li>
+      <li>2 eggs </li>
+      <li>1/4 cup soy sauce</li>
+      <li>1/2 tsp black pepper</li>
+      <li>2 sautéed green onions</li>
+      <li>1 jalapeno </li>
+      <li>Oil</li>
+    </ul>
+  </section>
+</div>
+</body>
+</html>

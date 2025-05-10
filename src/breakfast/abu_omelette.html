@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Abu Omelette Recipe</title>
+  <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../style-flexbox.css" />
+</head>
+<body>
+<div id="header-placeholder"></div>
+<script>
+  fetch('/Recipes/src/header.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('header-placeholder').innerHTML = data;
+    })
+    .catch(error => console.error('Error loading header:', error));
+</script>
+
+<h1>Abu Omelette</h1>
+<div class="recipe-content reverse-layout">
+  <section class="instructions">
+    <h2>Instructions</h2>
+    <ol>
+      <li>Cut the tomatoes, onions, and jalapeño into thin slices. Mince the ginger. Chop the cilantro. If you don't have a garlic presser, mince the garlic. </li>
+      <li>Coat the pan with oil and put it on low heat. Take a garlic presser and squeeze the garlic into the pan. Crank the heat to medium and add the ginger. Stir it around in the oil. </li>
+      <li>Add the tomatoes next shortly after and stir, cranking the heat to high. Add the salt and red chili pepper and stir.</li>
+      <li>Wait for the tomatoes to shrink and for the water to evaporate a little. </li>
+      <li>Change the heat to low and add the onions, then stir. Change the heat to medium and stir for a bit.</li>
+      <li>Lower the heat, crack all the eggs into the pan and then mix them. While the egg mixture is still wet, add the jalapeños.</li>
+      <li>Scramble them on medium heat. Abu likes to spray oil on it as he cooks the eggs. </li>
+      <li>Once the eggs are cooked, add in the cilantro and give it one final stir.</li>
+      <li>Serve with paratha or buttered toast.</li>
+    </ol>
+  </section>
+  <section class="ingredients">
+    <h2>Ingredients</h2>
+    <ul>
+      <li>4 eggs</li>
+      <li>2 roma tomatoes</li>
+      <li> medium onion</li>
+      <li>1 inch ginger</li>
+      <li>10 garlic cloves</li>
+      <li>1 jalapeño</li>
+      <li>1 bunch cilantro</li>
+      <li>1/2 tsp salt</li>
+      <li>1/2 tsp red chili pepper</li>
+    </ul>
+  </section>
+</div>
+</body>
+</html>

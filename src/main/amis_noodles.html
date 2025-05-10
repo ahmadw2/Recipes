@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ami's Noodles Recipe</title>
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../style-flexbox.css" />
+</head>
+<body>
+<div id="header-placeholder"></div>
+<script>
+    fetch('/Recipes/src/header.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('header-placeholder').innerHTML = data;
+      })
+      .catch(error => console.error('Error loading header:', error));
+</script>
+
+<h1>Ami's Noodles</h1>
+<div class="recipe-content reverse-layout">
+    <section class="instructions">
+        <h2>Instructions</h2>
+        <ol>
+            <li>Boil water for noodles, once it starts boiling, add two tablespoons oil and two tablespoons salt</li>
+            <li> Cook for 12 minutes</li>
+            <li>Drain and put cold water on noodles to prevent from sticking</li>
+            <li>Cut chicken into cubes</li>
+            <li>Add lemon juice , 1/6 cup soy sauce, 1/2 tsp garlic powder, 1/2 tsp ground black pepper into bowl with chicken</li>
+            <li>Mix and then add one tablespoon of cornstarch</li>
+            <li>Cut celery </li>
+            <li>Mix stirfry, and peas into pan</li>
+            <li>Cook for 10 minutes</li>
+            <li>Add celery. Cook for five minutes Add spinach and cook for a few more minutes</li>
+            <li>Add 2 tablespoons soy sauce to vegetables and 2 tablespoons vinegar</li>
+            <li>Meanwhile, fill pan with oil and put chicken in a pan to cook. About 8 minutes</li>
+            <li>Put noodles in large nonstick pot and add oil. Mix noodles and make sure they separate. Mix veggies with noodles. </li>
+            <li>Add 1/4 cup soy sauce. Add 1/4 cup vinegar. </li>
+            <li>Mix chicken into noodles. Add one tsp black ground pepper and one tsp salt.</li>
+        </ol>
+    </section>
+    <section class="ingredients">
+        <h2>Ingredients</h2>
+        <ul>
+            <li>1 packet of spaghetti noodles</li>
+            <li>1/6 cup soy sauce</li>
+            <li>2 tbs vinegar</li>
+            <li>1 lb chicken breast</li>
+            <li>1/8 cup Lemon juice</li>
+            <li>1/2 tsp ground black pepper</li>
+            <li>1 tsp garlic powder</li>
+            <li>1 packet stirfry</li>
+            <li>3 sticks celery</li>
+            <li>1/2 cup peas</li>
+            <li>1-2 cup baby spinach</li>
+        </ul>
+    </section>
+</div>
+</body>
+</html>
